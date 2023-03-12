@@ -9,6 +9,31 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <p align="center">An application to reveal images progressively, in order to preview them while taking care of yourself.</p>
 <br /><br />
 
+## Usage
+
+**Note**: In the spirit of [README-driven development][rdd], these instructions are currently aspirational. Comments and suggestions are welcome to turn them into the description of a truly useful application.
+
+1. Select a file to preview:
+   - **Open with... > Safer Preview**
+2. Wait for the application to start…
+
+Or
+
+1. Start **Safer Preview**
+2. Select a file to preview:
+   - **Open…** and select the file in the file browser
+   - **Drag and drop** the file into the application window
+
+Then
+
+3. A blurred preview of the image is displayed
+4. If you want, choose to **Reveal** the image to remove the blur:
+   - by using the button that is displayed over the blurry image
+   - **Image > Reveal** (also accessible via keyboard accelerators)
+   - Keyboard shortcut (<kbd>Spacebar</kbd>)
+
+  [rdd]: https://tom.preston-werner.com/2010/08/23/readme-driven-development.html
+
 ## License
 
 [![REUSE status](https://api.reuse.software/badge/github.com/gonzalo-bulnes/safer-preview)](https://api.reuse.software/info/github.com/gonzalo-bulnes/safer-preview)
