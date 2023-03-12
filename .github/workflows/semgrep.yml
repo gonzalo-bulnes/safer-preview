@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2023 r2c <https://r2c.dev>
+# SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#
+# See https://semgrep.dev/docs/semgrep-ci/sample-ci-configs/
+
+name: Semgrep
+
+on: push
+
+jobs:
+  semgrep:
+    name: SAST Scan
+    runs-on: ubuntu-latest
+
+    container:
+      image: returntocorp/semgrep
+
+    # Skip any PR created by dependabot to avoid permission issues:
+    if: (github.actor != 'dependabot[bot]')
+
+    steps:
+      - uses: actions/checkout@v3
+      # Run the "semgrep" command on the command line of the docker image.
+      - run: semgrep
+        env:
+           # Add the rules that Semgrep uses by setting the SEMGREP_RULES environment variable.
+           SEMGREP_RULES: p/default # more at semgrep.dev/explore
