@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Safer Preview
+Upstream-Contact: Gonzalo Bulnes Guilpain <gon.bulnes@fastmail.com>
+Source: https://github.com/gonzalo-bulnes/safer-preview
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...
