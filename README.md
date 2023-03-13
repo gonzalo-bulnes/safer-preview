@@ -8,6 +8,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <h1 align='center'>Safer Preview</h1>
 <p align="center">An application to reveal images progressively, in order to preview them while taking care of yourself.</p>
 <br /><br />
+<p align="center">
+<a href="CODE_OF_CONDUTCT.md"><img src="https://img.shields.io/badge/contributor%20covenant-2.1-blueviolet" alt="Contributor Covenant 2.1"/></a>
+<img src="https://img.shields.io/badge/code%20review-welcome-e7359e.svg?style=popout" alt="code reviews are welcome"/>
+
+</p>
+<br /><br />
 
 ## Usage
 
@@ -33,6 +39,10 @@ Then
    - Keyboard shortcut (<kbd>Spacebar</kbd>)
 
   [rdd]: https://tom.preston-werner.com/2010/08/23/readme-driven-development.html
+
+## Contributing
+
+Contributions are welcome, please refer to the [CONTRIBUTING](CONTRIBUTING.md) guidelines for details.
 
 ## License
 
