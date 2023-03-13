@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
+//
+// SPDX-License-Identifier: CC0-1.0
+
 module.exports = {
 	root: true,
 	extends: ['eslint:recommended', 'prettier'],
