@@ -38,7 +38,7 @@ Then
    - **Image > Reveal** (also accessible via keyboard accelerators)
    - Keyboard shortcut (<kbd>Spacebar</kbd>)
 
-  [rdd]: https://tom.preston-werner.com/2010/08/23/readme-driven-development.html
+[rdd]: https://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 
 ## Contributing
 
@@ -54,4 +54,4 @@ See [Developer Manual](docs/developer_manual).
 
 This project complies with the [REUSE][reuse] initiative recommendations. All files include licensing information, have a companion `.license` file, or are listed in `.reuse/dep5`.
 
-  [reuse]: https://reuse.software
+[reuse]: https://reuse.software

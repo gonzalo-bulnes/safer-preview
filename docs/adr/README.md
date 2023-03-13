@@ -17,7 +17,6 @@ To add a new record:
 
 ## Resources
 
-
 - [Lightweight Architecture Decision Records][ladrtr] on the Thoughtworks Technology Radar
 - Format: https://adr.github.io/madr
 
@@ -26,4 +25,4 @@ To add a new record:
 ## Index
 
 0. [Template](0000_template.md)
-0. [Frameworks](0001_frameworks.md)
+1. [Frameworks](0001_frameworks.md)

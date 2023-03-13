@@ -24,5 +24,4 @@ When adding or modifying files, please make sure you append the appropriate copy
 
 Likewise, please add yourself to the [AUTHORS](AUTHORS.md). That file is not used for licensing purposes, but for giving credit where it is due — for example, in the "about" section of the application. (If you're working for an organization, you can add your name here if you want, even if the copyright headers are in that organization's name.)
 
-  [coc]: CODE_OF_CONDUCT.md
-
+[coc]: CODE_OF_CONDUCT.md

@@ -57,4 +57,4 @@ You can preview the production build with `npm run preview`.
 
 The application deployment is driven from the backend, see [Backend Developer Manual][bdm].
 
-  [bdm]: backend.md
+[bdm]: backend.md
