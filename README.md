@@ -44,6 +44,10 @@ Then
 
 Contributions are welcome, please refer to the [CONTRIBUTING](CONTRIBUTING.md) guidelines for details.
 
+## Development
+
+See [Developer Manual](docs/developer_manual).
+
 ## License
 
 [![REUSE status](https://api.reuse.software/badge/github.com/gonzalo-bulnes/safer-preview)](https://api.reuse.software/info/github.com/gonzalo-bulnes/safer-preview)
