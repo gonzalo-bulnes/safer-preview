@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
+//
+// SPDX-License-Identifier: CC0-1.0
+
 /** @type { import('@storybook/sveltekit').StorybookConfig } */
 const config = {
 	stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],

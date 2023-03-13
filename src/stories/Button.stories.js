@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
+//
+// SPDX-License-Identifier: CC0-1.0
+
 import Button from './Button.svelte';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/svelte/writing-stories/introduction
