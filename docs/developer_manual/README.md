@@ -1,5 +1,6 @@
 <!--
 SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
+SPDX-FileCopyrightText: 2023 Freedom of the Press Foundation
 
 SPDX-License-Identifier: AGPL-3.0-or-later
 -->
@@ -13,3 +14,13 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   [fdm]: frontend.md
   [bdm]: backend.md
+
+## Preview the application
+
+Start a development build of the application:
+
+```bash
+npm install # if needed
+
+npm run tauri dev
+```

@@ -25,7 +25,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-Format al files:
+Format all files:
 
 ```bash
 npm run format
