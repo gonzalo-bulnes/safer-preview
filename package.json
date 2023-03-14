@@ -12,7 +12,8 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build"
+		"build-storybook": "storybook build",
+		"chromatic": "chromatic --exit-zero-on-changes"
 	},
 	"devDependencies": {
 		"@storybook/addon-essentials": "^7.0.0-rc.2",
@@ -24,6 +25,7 @@
 		"@storybook/testing-library": "^0.0.14-next.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
+		"chromatic": "^6.17.1",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
