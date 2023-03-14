@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2022 GitHub
+# SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+name: Cargo (fmt)
+
+on: push
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  format:
+    name: 'fmt'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Tauri dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev libappindicator3-dev librsvg2-dev patchelf
+      - name: Build
+        run: cd src-tauri && cargo build --verbose
+      - name: Check format
+        run: cd src-tauri && cargo fmt --check
