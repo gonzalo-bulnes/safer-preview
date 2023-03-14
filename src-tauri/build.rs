@@ -3,5 +3,5 @@
 // SPDX-License-Identifier: CC0-1.0
 
 fn main() {
-  tauri_build::build()
+    tauri_build::build()
 }
