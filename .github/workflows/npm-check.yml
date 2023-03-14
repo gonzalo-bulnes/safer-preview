@@ -12,7 +12,7 @@ on: push
 
 jobs:
   check:
-    name: 'check'
+    name: 'npm check'
     runs-on: ubuntu-latest
 
     steps:

@@ -12,7 +12,7 @@ on: push
 
 jobs:
   test:
-    name: 'test:unit'
+    name: 'npm test:unit'
     runs-on: ubuntu-latest
 
     steps:

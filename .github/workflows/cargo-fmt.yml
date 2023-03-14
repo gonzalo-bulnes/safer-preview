@@ -12,7 +12,7 @@ env:
 
 jobs:
   format:
-    name: 'fmt'
+    name: 'cargo fmt'
     runs-on: ubuntu-latest
 
     steps:

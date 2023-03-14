@@ -18,7 +18,7 @@ on: push
 
 jobs:
   clippy:
-    name: 'clippy'
+    name: 'cargo clippy'
     runs-on: ubuntu-latest
     permissions:
       contents: read

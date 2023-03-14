@@ -12,7 +12,7 @@ env:
 
 jobs:
   test:
-    name: 'test'
+    name: 'cargo test'
     runs-on: ubuntu-latest
 
     steps:
