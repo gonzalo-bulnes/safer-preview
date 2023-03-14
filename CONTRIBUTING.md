@@ -18,10 +18,17 @@ I'm always learning! You're welcome to open a _pull request_ to walk me through 
 - making the code safer (from a security point of view)
 - anything else that you find relevant!
 
-## Authorship, copyright and licensing
+## Copyright and licensing
 
 When adding or modifying files, please make sure you append the appropriate copyright and licensing information to their licensing headers. I can help with that if you're unsure about how to proceed.
 
-Likewise, please add yourself to the [AUTHORS](AUTHORS.md). That file is not used for licensing purposes, but for giving credit where it is due — for example, in the "about" section of the application. (If you're working for an organization, you can add your name here if you want, even if the copyright headers are in that organization's name.)
+## Authorship
+
+When adding contributing, please add yourself to:
+
+- the [AUTHORS](AUTHORS.md) list
+- and the list in [`src-tauri/Cargo.toml`](src-tauri/Cargo.yml) when relevant
+
+Those file are not used for licensing purposes, but for giving credit where it is due — for example, in the "about" section of the application. (If you're working for an organization, you can add your name if you want, even if the copyright headers are in that organization's name.)
 
 [coc]: CODE_OF_CONDUCT.md
