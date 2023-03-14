@@ -13,7 +13,8 @@
 		"format": "prettier --plugin-search-dir . --write .",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
-		"chromatic": "chromatic --exit-zero-on-changes"
+		"chromatic": "chromatic --exit-zero-on-changes",
+		"tauri": "tauri"
 	},
 	"devDependencies": {
 		"@storybook/addon-essentials": "^7.0.0-rc.2",
@@ -25,6 +26,7 @@
 		"@storybook/testing-library": "^0.0.14-next.1",
 		"@sveltejs/adapter-static": "^1.0.6",
 		"@sveltejs/kit": "^1.5.0",
+		"@tauri-apps/cli": "^1.2.3",
 		"chromatic": "^6.17.1",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
