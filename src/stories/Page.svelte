@@ -1,12 +1,20 @@
 <!--
 SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
+SPDX-FileCopyrightText: 2023 Freedom of the Press Foundation
 
-SPDX-License-Identifier: CC0-1.0
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 <script>
 	import './page.css';
 	import Header from './Header.svelte';
 
+	/**
+	 * @typedef {Object} User
+	 * @property {string} name
+	 */
+	/**
+	 * @type {?User}
+	 */
 	let user = null;
 </script>
 

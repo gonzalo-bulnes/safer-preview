@@ -1,5 +1,6 @@
 <!--
 SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
+SPDX-FileCopyrightText: 2023 Freedom of the Press Foundation
 
 SPDX-License-Identifier: CC0-1.0
 -->
@@ -9,16 +10,37 @@ SPDX-License-Identifier: CC0-1.0
 
 	import { createEventDispatcher } from 'svelte';
 
+	/**
+	 * @typedef {Object} User
+	 * @property {string} name
+	 */
+	/**
+	 * @type {?User}
+	 */
 	export let user = null;
 
 	const dispatch = createEventDispatcher();
 
+	/**
+	 * @param {Object} event
+	 * @listens Object
+	 */
 	function onLogin(event) {
 		dispatch('login', event);
 	}
+
+	/**
+	 * @param {Object} event
+	 * @listens Object
+	 */
 	function onLogout(event) {
 		dispatch('logout', event);
 	}
+
+	/**
+	 * @param {Object} event
+	 * @listens Object
+	 */
 	function onCreateAccount(event) {
 		dispatch('createAccount', event);
 	}

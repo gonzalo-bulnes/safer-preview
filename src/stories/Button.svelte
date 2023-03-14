@@ -1,7 +1,8 @@
 <!--
 SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
+SPDX-FileCopyrightText: 2023 Freedom of the Press Foundation
 
-SPDX-License-Identifier: CC0-1.0
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 <script>
 	import './button.css';
@@ -12,7 +13,7 @@ SPDX-License-Identifier: CC0-1.0
 	export let primary = false;
 
 	/**
-	 * @type {string} What background color to use
+	 * @type {string|undefined} What background color to use
 	 */
 	export let backgroundColor = undefined;
 
