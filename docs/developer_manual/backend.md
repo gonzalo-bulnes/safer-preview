@@ -11,6 +11,10 @@ The backend is a Tauri application and a Rust library. The Tauri application pro
 
 ## Getting started
 
+Install the prerequisites to run Tauri in development:
+
+- https://tauri.app/v1/guides/getting-started/prerequisites/
+
 All backend development happens in `src-tauri/`.
 
 ```bash

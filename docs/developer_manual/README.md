@@ -17,10 +17,18 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 ## Preview the application
 
+Install the prerequisites to run Tauri in development:
+
+- https://tauri.app/v1/guides/getting-started/prerequisites/
+
+Install the frontend dependencies:
+
+```bash
+npm install
+```
+
 Start a development build of the application:
 
 ```bash
-npm install # if needed
-
 npm run tauri dev
 ```
