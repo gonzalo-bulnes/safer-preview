@@ -11,6 +11,11 @@ on: push
 
 jobs:
   semgrep:
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
+      actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
+
     name: SAST Scan
     runs-on: ubuntu-latest
 
@@ -23,7 +28,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       # Run the "semgrep" command on the command line of the docker image.
-      - run: semgrep
+      - run: semgrep --sarif --output semgrep.sarif
         env:
           # Add the rules that Semgrep uses by setting the SEMGREP_RULES environment variable.
           SEMGREP_RULES: p/default # more at semgrep.dev/explore
+
+      # Upload SARIF file generated in previous step
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: semgrep.sarif
+        if: always()
