@@ -29,7 +29,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 		min-width: 320px;
 		max-height: 100%;
 		max-width: 100%;
-		box-sizing: border-box;
 		background-color: #333;
 	}
 	.preview,
@@ -53,7 +52,6 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 		position: absolute;
 		top: 0;
 		left: 0;
-		box-sizing: border-box;
 	}
 	.revealed .button {
 		border-width: 0;

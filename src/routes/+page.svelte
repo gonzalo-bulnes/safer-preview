@@ -1,8 +1,10 @@
 <!--
 SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
 
-SPDX-License-Identifier: CC0-1.0
+SPDX-License-Identifier: AGPL-3.0-or-later
 -->
+<script>
+	import Preview from '../lib/Preview.svelte';
+</script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<Preview />
