@@ -1,7 +1,11 @@
+# SPDX-FileCopyrightText: 2022 Mihai Galos
 # SPDX-FileCopyrightText: 2022 GitHub
 # SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
+#
+# The cache sections were originally shared under CC BY-SA 4.0,
+# see https://stackoverflow.com/a/64635207
 
 name: Cargo (fmt)
 
@@ -21,6 +25,22 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev libappindicator3-dev librsvg2-dev patchelf
+      - name: Cargo Cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.cargo
+          key: ${{ runner.os }}-cargo-${{ hashFiles('src-tauri/Cargo.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-${{ hashFiles('src-tauri/Cargo.toml') }}
+            ${{ runner.os }}-cargo
+      - name: Cargo Target Cache
+        uses: actions/cache@v1
+        with:
+          path: src-tauri/target
+          key: ${{ runner.os }}-cargo-target-${{ hashFiles('src-tauri/Cargo.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-target-${{ hashFiles('src-tauri/Cargo.toml') }}
+            ${{ runner.os }}-cargo-target
       - name: Build
         run: cd src-tauri && cargo build --verbose
       - name: Check format
