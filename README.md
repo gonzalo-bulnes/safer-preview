@@ -40,6 +40,14 @@ Then
 
 [rdd]: https://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 
+## Screenshots
+
+Here is what an early demo of the application looks like in Qubes OS. On a different operating system, you can expect to see the window decorations you're familar with, instead of these sober blue ones.
+
+<p align="center"><img width="481" height="284" title="Screenshot of the application displaying a blurred still of Sita Sings the Blues by Nina Paley" alt="Screenshot of the application displaying a blurred still of Sita Sings the Blues by Nina Paley" src="docs/demo-with-blur.png" /></p>
+
+<p align="center"><img width="481" height="284" title="Screenshot of the application displaying a still of Sita Sings the Blues by Nina Paley, without any blur" alt="Screenshot of the application displaying a still of Sita Sings the Blues by Nina Paley, without any blur" src="docs/demo-without-blur.png" /></p>
+
 ## Contributing
 
 Contributions are welcome, please refer to the [CONTRIBUTING](CONTRIBUTING.md) guidelines for details.
