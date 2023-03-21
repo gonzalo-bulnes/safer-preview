@@ -9,13 +9,19 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	 *
 	 * @component
 	 */
-	import image from './SitaSingsTheBlues.png';
+	import { default as example } from './SitaSingsTheBlues.png';
 
 	/**
 	 * How intense to make the blur
 	 * @type {'heavy'| 'medium'| 'light'}
 	 */
 	export let blur = 'medium';
+
+	/**
+	 * A URL representing the image to preview
+	 * @type {string}
+	 */
+	export let image = example;
 
 	/**
 	 * Overriding style. Use wisely.
