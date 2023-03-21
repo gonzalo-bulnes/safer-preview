@@ -9,7 +9,12 @@ export default {
 	title: 'Composite Components/Preview',
 	component: Preview,
 	tags: ['autodocs'],
-	argTypes: {}
+	argTypes: {
+		blur: {
+			control: { type: 'select' },
+			options: ['light', 'medium', 'heavy']
+		}
+	}
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/7.0/svelte/writing-stories/args

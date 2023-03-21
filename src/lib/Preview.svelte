@@ -11,54 +11,63 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	 */
 	import image from './SitaSingsTheBlues.png';
 
+	/**
+	 * How intense to make the blur
+	 * @type {'heavy'| 'medium'| 'light'}
+	 */
+	export let blur = 'medium';
+
 	let revealed = false;
 
-	const onClick = () => {
-		console.log('clicked');
+	const toggleBlur = () => {
 		revealed = !revealed;
 	};
 </script>
 
-<div class={['preview', revealed ? 'revealed' : ''].join(' ')}>
-	<img alt="" src={image} />
-	<div class="button">
-		<button on:click={onClick}>{revealed ? 'Blur' : 'Reveal'}</button>
+<div class="frame">
+	<img alt="" src={image} class={revealed ? 'blur-none' : `blur-${blur}`} />
+	<div class="overlay">
+		<button on:click={toggleBlur}>{revealed ? 'Blur' : 'Reveal'}</button>
 	</div>
 </div>
 
 <style>
-	.preview {
+	.frame {
+		background-color: #333;
 		display: inline-block;
-		overflow: hidden;
 		min-height: 240px;
 		min-width: 320px;
 		max-height: 100%;
 		max-width: 100%;
-		background-color: #333;
+		overflow: hidden;
 	}
-	.preview,
+
+	.frame,
 	img {
 		position: relative;
 	}
-	img {
-		filter: blur(8px);
-	}
 
-	.revealed img {
+	.blur-none {
 		filter: blur(0);
 	}
-
-	.button {
-		height: 100%;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: absolute;
-		top: 0;
-		left: 0;
+	.blur-light {
+		filter: blur(6px);
 	}
-	.revealed .button {
-		border-width: 0;
+	.blur-medium {
+		filter: blur(12px);
+	}
+	.blur-heavy {
+		filter: blur(24px);
+	}
+
+	.overlay {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		top: 0;
 	}
 </style>
