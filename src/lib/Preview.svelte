@@ -10,6 +10,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	 * @component
 	 */
 	import { default as example } from './SitaSingsTheBlues.png';
+	import Button from './Button.svelte';
 
 	/**
 	 * How intense to make the blur
@@ -39,7 +40,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <div class="frame" {style}>
 	<img alt="" src={image} class={revealed ? 'blur-none' : `blur-${blur}`} />
 	<div class="overlay">
-		<button on:click={toggleBlur}>{revealed ? 'Blur' : 'Reveal'}</button>
+		<Button on:click={toggleBlur} text={revealed ? 'Blur' : 'Reveal'} />
 	</div>
 </div>
 
