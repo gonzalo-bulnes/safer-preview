@@ -17,6 +17,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	 */
 	export let blur = 'medium';
 
+	/**
+	 * Overriding style. Use wisely.
+	 * @type {string | undefined}
+	 */
+	export let style = undefined;
+
 	let revealed = false;
 
 	const toggleBlur = () => {
@@ -24,7 +30,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	};
 </script>
 
-<div class="frame">
+<div class="frame" {style}>
 	<img alt="" src={image} class={revealed ? 'blur-none' : `blur-${blur}`} />
 	<div class="overlay">
 		<button on:click={toggleBlur}>{revealed ? 'Blur' : 'Reveal'}</button>
@@ -35,6 +41,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	.frame {
 		background-color: #333;
 		display: inline-block;
+		line-height: 0;
 		min-height: 240px;
 		min-width: 320px;
 		max-height: 100%;

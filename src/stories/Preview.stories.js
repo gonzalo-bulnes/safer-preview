@@ -13,6 +13,9 @@ export default {
 		blur: {
 			control: { type: 'select' },
 			options: ['light', 'medium', 'heavy']
+		},
+		style: {
+			control: { type: 'text' }
 		}
 	}
 };
