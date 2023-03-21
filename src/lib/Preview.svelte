@@ -4,6 +4,11 @@ SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
 SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 <script>
+	/**
+	 * A preview displays a burred image and a button to reveal it.
+	 *
+	 * @component
+	 */
 	import image from './SitaSingsTheBlues.png';
 
 	let revealed = false;
