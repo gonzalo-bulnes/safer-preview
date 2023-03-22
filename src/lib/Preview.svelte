@@ -1,5 +1,7 @@
 <!--
 SPDX-FileCopyrightText: 2023 Gonzalo Bulnes Guilpain
+SPDX-FileCopyrightText: 2023 Freedom of the Press Foundation
+SPDX-FileCopyrightText: 2016 Lea Verrou
 
 SPDX-License-Identifier: AGPL-3.0-or-later
 -->
@@ -46,19 +48,42 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
 <style>
 	.frame {
-		background-color: #333;
-		display: inline-block;
-		line-height: 0;
-		min-height: 240px;
-		min-width: 320px;
-		max-height: 100%;
-		max-width: 100%;
+		align-items: center;
+		display: flex;
+		justify-content: center;
 		overflow: hidden;
+		width: fit-content;
 	}
 
 	.frame,
 	img {
 		position: relative;
+	}
+
+	img {
+		/* See https://projects.verou.me/css3patterns/#checkerboard */
+		--dark: #b8b8b8;
+		--light: #fff;
+		--size: 8px;
+		background-color: var(--light);
+		background-image: linear-gradient(
+				45deg,
+				var(--dark) 25%,
+				transparent 25%,
+				transparent 75%,
+				var(--dark) 75%,
+				var(--dark)
+			),
+			linear-gradient(
+				45deg,
+				var(--dark) 25%,
+				transparent 25%,
+				transparent 75%,
+				var(--dark) 75%,
+				var(--dark)
+			);
+		background-size: calc(var(--size) * 2) calc(var(--size) * 2);
+		background-position: 0 0, var(--size) var(--size);
 	}
 
 	.blur-none {

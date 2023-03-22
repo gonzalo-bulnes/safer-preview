@@ -4,6 +4,7 @@
 
 import { within, userEvent } from '@storybook/testing-library';
 import Preview from '../lib/Preview.svelte';
+import { default as example } from './icon.png';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/svelte/writing-stories/introduction
 export default {
@@ -52,5 +53,20 @@ export const LightBlur = {
 export const HeavyBlur = {
 	args: {
 		blur: 'heavy'
+	}
+};
+export const Transparency = {
+	args: {
+		image: example
+	},
+	/**
+	 * @param {CanvasContainer} argument
+	 */
+	play: async ({ canvasElement }) => {
+		const canvas = within(canvasElement);
+		const revealButton = await canvas.getByRole('button', {
+			name: /reveal/i
+		});
+		await userEvent.click(revealButton);
 	}
 };
