@@ -39,4 +39,18 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	};
 </script>
 
-<input type="file" {style} bind:files on:change={emitFileSelected} />
+<label {style}>
+	<input type="file" bind:files on:change={emitFileSelected} />
+</label>
+
+<style>
+	input {
+		border: 2px dashed #d8d8d8;
+		border-radius: 8px;
+		padding: 24px;
+	}
+	label {
+		display: block;
+		padding: 16px;
+	}
+</style>
