@@ -39,8 +39,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	};
 </script>
 
-<div class="frame" {style}>
-	<img alt="" src={image} class={revealed ? 'blur-none' : `blur-${blur}`} />
+<div class="frame checkered" {style}>
+	<img
+		alt=""
+		src={image}
+		class={[revealed ? 'blur-none' : `blur-${blur}`, 'checkered'].join(' ')}
+	/>
 	<div class="overlay">
 		<Button on:click={toggleBlur} text={revealed ? 'Blur' : 'Reveal'} />
 	</div>
@@ -60,7 +64,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 		position: relative;
 	}
 
-	img {
+	.checkered {
 		/* See https://projects.verou.me/css3patterns/#checkerboard */
 		--dark: #b8b8b8;
 		--light: #fff;
