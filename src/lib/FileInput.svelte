@@ -18,6 +18,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	const dispatch = createEventDispatcher();
 
 	/**
+	 * List of MIME types to accept
+	 * @type {string}
+	 */
+	export let accept = '*';
+
+	/**
 	 * Overriding style. Use wisely.
 	 * @type {string | undefined}
 	 */
@@ -40,7 +46,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 </script>
 
 <label {style}>
-	<input type="file" bind:files on:change={emitFileSelected} />
+	<input type="file" {accept} bind:files on:change={emitFileSelected} />
 </label>
 
 <style>
