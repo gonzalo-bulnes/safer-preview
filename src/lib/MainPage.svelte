@@ -35,5 +35,5 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 {#if image}
 	<Preview {style} {image} />
 {:else}
-	<FileInput {style} on:fileSelected={setImage} />
+	<FileInput {style} accept="image/*" on:fileSelected={setImage} />
 {/if}
